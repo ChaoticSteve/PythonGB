@@ -56,3 +56,5 @@ if __name__ == '__main__':
     print(f'Первый многочлен: {p1}\n'
           f'Второй многочлен: {p2}\n'
           f'Их сумма: {get_result(p1, p2)}')
+    with open('polinomial_sum.txt', 'w', encoding='utf-8') as f:
+        f.write(get_result(p1, p2))
